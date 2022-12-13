@@ -45,8 +45,8 @@ class BufferedReader {
 BufferedReader readerInstance = null;
 BufferedReader compactReaderInstance = null;
 
-void createReaderInstance(String hex) {
-  readerInstance = BufferedReader.fromHex(hex);
+void createReaderInstance(Uint8List binary) {
+  readerInstance = BufferedReader(binary);
 }
 
 void createCompactReaderInstance(Uint8List data) {
