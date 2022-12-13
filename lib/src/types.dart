@@ -24,3 +24,4 @@ part 'typename.dart';
 part 'metadata.dart';
 part 'substrate.dart';
 part 'extrinsics.dart';
+part 'roam_global.dart';
