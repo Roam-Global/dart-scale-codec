@@ -644,6 +644,8 @@ class Vec extends GeneralTemplate {
   void operator[]=(int idx, ScaleCodecBase v) {
     objects[idx] = v;
   }
+
+	dynamic length() => objects.length;
 }
 
 class Option extends GeneralTemplate {
