@@ -39,7 +39,6 @@ const maxAge = 'max_age';
 const locationName = 'location_name';
 const locationLat = 'location_lat';
 const locationLng = 'location_lng';
-const users = 'users';
 
 class SearchOptions extends GeneralStruct {
   static const List<Tuple2<String, String>> fields = [
@@ -53,7 +52,6 @@ class SearchOptions extends GeneralStruct {
     Tuple2(maxAge, 'u8'),
     Tuple2(locationH3Index, 'u64'),
     Tuple2(locationName, 'Str'),
-    Tuple2(users, 'Vec<GroupUser>')
   ];
 
   SearchOptions.fromBinary() : super.fromBinary();
