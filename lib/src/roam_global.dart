@@ -27,6 +27,18 @@ class GroupMatch extends GeneralStruct {
   GroupMatch.fromMap(Map<String, dynamic> s) : super.fromJson(s);
 }
 
+class SearchMatch extends GeneralStruct {
+	static const List<Tuple2<String, String>> fields = [
+    Tuple2('entity_type', 'Str'),
+    Tuple2('entity_id', 'Str'),
+  ];
+
+  SearchMatch.fromBinary() : super.fromBinary();
+
+	SearchMatch.fromJson(Map<String, dynamic> s) : super.fromJson(s);
+  SearchMatch.fromMap(Map<String, dynamic> s) : super.fromJson(s);
+}
+
 const userH3Index = 'user_h3_index';
 const locationH3Index = 'location_h3_index';
 const userID = 'user_id';
