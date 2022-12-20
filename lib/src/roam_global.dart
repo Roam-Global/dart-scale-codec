@@ -5,13 +5,38 @@ class GroupUser extends GeneralStruct {
     Tuple2('user_id', 'Str'),
     Tuple2('first_name', 'Str'),
     Tuple2('last_name', 'Str'),
-    Tuple2('photo', 'Str'),
+    Tuple2('image', 'Str'),
+    Tuple2('bio', 'Str'),
   ];
 
   GroupUser.fromBinary() : super.fromBinary();
 
 	GroupUser.fromJson(Map<String, dynamic> s) : super.fromJson(s);
   GroupUser.fromMap(Map<String, dynamic> s) : super.fromJson(s);
+}
+
+class GroupUsers extends GeneralStruct {
+	static const List<Tuple2<String, String>> fields = [
+    Tuple2('group_id', 'Str'),
+    Tuple2('users', 'Vec<GroupUser>'),
+  ];
+
+  GroupUsers.fromBinary() : super.fromBinary();
+
+	GroupUsers.fromJson(Map<String, dynamic> s) : super.fromJson(s);
+  GroupUsers.fromMap(Map<String, dynamic> s) : super.fromJson(s);
+}
+
+class GroupDetails extends GeneralStruct {
+	static const List<Tuple2<String, String>> fields = [
+    Tuple2('group_id', 'Str'),
+    Tuple2('location_name', 'Str'),
+  ];
+
+  GroupDetails.fromBinary() : super.fromBinary();
+
+	GroupDetails.fromJson(Map<String, dynamic> s) : super.fromJson(s);
+  GroupDetails.fromMap(Map<String, dynamic> s) : super.fromJson(s);
 }
 
 class GroupMatch extends GeneralStruct {
