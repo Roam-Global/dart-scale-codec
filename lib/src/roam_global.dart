@@ -81,14 +81,14 @@ const isLocationFlexible = 'is_location_flexible';
 class SearchOptions extends GeneralStruct {
   static const List<Tuple2<String, String>> fields = [
     Tuple2(userID, 'Str'),
-    Tuple2(userH3Index, 'u64'),
+    Tuple2(userH3Index, 'i64'),
     Tuple2(categories, 'Vec<Str>'),
     Tuple2(minPeople, 'i16'),
     Tuple2(maxPeople, 'i16'),
     Tuple2(maxRadius, 'u8'),
     Tuple2(minAge, 'i16'),
     Tuple2(maxAge, 'i16'),
-    Tuple2(locationH3Index, 'u64'),
+    Tuple2(locationH3Index, 'i64'),
     Tuple2(locationName, 'Str'),
 		Tuple2(isLocationFlexible, 'Bool')
   ];
